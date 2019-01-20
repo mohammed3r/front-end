@@ -1,0 +1,19 @@
+<table style="width:100%">
+  <tr>
+    <th>event Name</th> 
+    <th>event date</th>
+    <th>event Catogry</th>
+    <th>event location</th>
+    <th>event City</th>
+
+  </tr>
+  <tr *ngFor="let event of events$">
+    <td>{{event.eventname}}</td> 
+    <td>{{event.eventdate}}</td>
+    <td>{{event.eventcategory}}</td>
+    <td ><a href=" {{event.eventlocation}}">Click Here!</a>
+     </td>
+    <td>{{event.eventcity}}</td>
+
+  </tr>
+</table>
